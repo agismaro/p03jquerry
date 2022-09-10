@@ -1,0 +1,74 @@
+<h3>Teman-teman di IKMI oleh Agis Maulana Robani NIM : 41215344</h3>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+
+<style>
+  td {
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  td:hover {
+    background: gray;
+  }
+</style>
+<table border="1" width="80%">
+  <tr bgcolor="gray" height="30">
+    <th>No</th>
+    <th>Nama</th>
+    <th>Alamat</th>
+  </tr>
+  <tr>
+    <td align="center">1</td>
+    <td class="agismaro">Abdu Shobarudin Amer</td>
+    <td class="hilingkeun">Cirebon</td>
+  </tr>
+  <tr>
+    <td align="center">2</td>
+    <td class="agismaro">Ade Safitri</td>
+    <td class="hilingkeun">Cirebon</td>
+  </tr>
+  <tr>
+    <td align="center">3</td>
+    <td class="agismaro">Adreyal Barus</td>
+    <td class="hilingkeun">Cirebon</td>
+  </tr>
+  <tr>
+    <td align="center">4</td>
+    <td class="agismaro">Andin Rania Ramdani</td>
+    <td class="hilingkeun">Indramayu</td>
+  </tr>
+  <tr>
+    <td align="center">5</td>
+    <td class="agismaro">Apriliana Janatu Marwa</td>
+    <td class="hilingkeun">Majalengka</td>
+  </tr>
+</table>
+
+<script>
+  $(".agismaro").click(function () {
+    // alert(1);
+    let isi = $(this).text();
+    //alert(isi);
+    let isi2 = prompt("Ubah dengan:", isi);
+    if (!isi2) return;
+    //alert(isi2);
+    $(this).text(isi2);
+  });
+</script>
+<script>
+  $(".hilingkeun").click(function () {
+    // alert(1);
+    let isi = $(this).text();
+    //alert(isi);
+    let isi2 = prompt("Ubah dengan:", isi);
+    if (!isi2) return;
+    //alert(isi2);
+    $(this).text(isi2);
+  });
+</script>
